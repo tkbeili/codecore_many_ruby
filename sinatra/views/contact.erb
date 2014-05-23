@@ -1,0 +1,45 @@
+<h1> <%= @title.capitalize %></h1>
+
+<form action="/contact" method="post">
+  
+  <div>
+    <label for="user-name">Name</label>
+    <input type="text" name="name" id="user-name">
+  </div>
+
+  <div>
+    <label for="email">Email</label>
+    <input type="email" name="email" id='email'>
+  </div>
+
+  <div>
+    <input type="radio" value="technical" id="technical" name="department">
+    <label for="technical">Technical</label>
+
+    <input type="radio" value="sales" id="sales" name="department">
+    <label for="sales">Sales</label>
+  </div>
+
+  <div>
+    <input type="checkbox" name="urgent" id="urgent">
+    <label for="urgent">Urgent Request?</label>
+  </div>
+
+  <div>
+    <label for="category">Category</label>
+    <select name="category" id="category">
+      <option value="sports">Sports</option>
+      <option value="art">Art</option>
+      <option value="science">Science</option>
+      <option value="fun">Fun</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5"></textarea>
+  </div>
+
+  <input type="submit" value="Contact Us">
+
+</form>
